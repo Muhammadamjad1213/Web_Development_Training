@@ -1,0 +1,465 @@
+/* General styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #fafcfb;
+  min-height: 100vh;
+  font-family: sans-serif;
+}
+
+.main-container {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+/* Header styles */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 20px;
+}
+
+h2 {
+  color: #6f86ca;
+}
+
+ul {
+  display: flex;
+  list-style: none;
+  gap: 20px;
+}
+
+li a {
+  text-decoration: none;
+  color: rgb(101, 98, 98);
+}
+
+/* Content section styles */
+.content {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  padding: 40px 20px;
+  gap: 20px;
+}
+
+.left {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  padding-left: 20px;
+}
+
+h1 {
+  font-weight: normal;
+  font-size: 2.5em;
+  line-height: 1.2;
+}
+
+h1 span {
+  color: #7790e0;
+}
+
+p {
+  width: 80%;
+  line-height: 1.6;
+  color: #555;
+}
+
+.right {
+  display: flex;
+  justify-content: center;
+}
+
+.right img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Buttons section */
+.buttons {
+  display: flex;
+  flex-direction: row;
+  gap: 15px;
+  padding: 20px;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+button {
+  padding: 12px 20px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 1em;
+}
+
+.btn1 {
+  background-color: #3758b7;
+  color: white;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.btn2 {
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+  background-color: #e2e7fd;
+  color: #3758b7;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Card section */
+.card {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background-color: #f3effe;
+  border-radius: 12px;
+  padding: 30px 20px;
+  margin: 30px 20px;
+  top: 122px;
+}
+
+.heading {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  text-align: center;
+}
+
+.h4 {
+  color: #997edf;
+  font-size: 1.5em;
+  margin: 0;
+}
+
+.b4 {
+  color: #433298;
+  font-size: 1.5em;
+  margin: 0;
+}
+
+.btn4 {
+  background-color: #714df9;
+  border-radius: 8px;
+  color: white;
+  padding: 15px 30px;
+  font-size: 1em;
+  cursor: pointer;
+}
+
+/* Footer styles */
+footer {
+  background-color: #192136;
+  padding: 50px 20px;
+  height: 72vh;
+}
+
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  position: relative;
+  top: 74px;
+  gap: 30px;
+}
+
+.img img {
+  max-width: 150px;
+  height: auto;
+}
+
+.ul3 {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.link a {
+  color: #4d546e;
+  text-decoration: none;
+  font-weight: bold;
+  margin-bottom: 10px;
+  display: block;
+}
+
+.ul3 li a {
+  color: white;
+}
+
+.p {
+  color: white;
+  line-height: 1.6;
+  margin-bottom: 15px;
+}
+
+.inp {
+  display: flex;
+  gap: 10px;
+}
+
+input {
+  padding: 10px;
+  border: none;
+  outline: none;
+  border-radius: 4px;
+  width: 100%;
+  max-width: 200px;
+}
+
+.btn5 {
+  padding: 10px 15px;
+  background-color: #433298;
+  color: white;
+  border-radius: 4px;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.img2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.img2 img {
+  max-width: 80px;
+  height: auto;
+  position: relative;
+  top: 100px;
+  right: 200px;
+}
+
+/* Media queries for responsiveness */
+
+/* Small screens (up to 576px) */
+@media (max-width: 576px) {
+  .header {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    text-align: center;
+  }
+
+  ul {
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+  }
+
+  .content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .left {
+    padding-left: 0;
+    align-items: center;
+  }
+
+  h1 {
+    font-size: 2em;
+  }
+
+  p {
+    width: 100%;
+  }
+
+  .buttons {
+    flex-direction: column;
+    align-items: stretch;
+    padding: 20px;
+  }
+
+  button {
+    width: 100%;
+  }
+
+  .card {
+    flex-direction: column;
+    text-align: center;
+    margin: 20px;
+    gap: 20px;
+  }
+
+  .heading {
+    align-items: center;
+  }
+
+  .footer-container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .ul3 {
+    align-items: center;
+  }
+
+  .inp {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  input {
+    max-width: none;
+  }
+
+  .img2 {
+    margin-top: 20px;
+  }
+}
+
+/* Medium screens (577px to 768px) */
+@media (min-width: 577px) and (max-width: 768px) {
+  .header {
+    padding: 15px 30px;
+  }
+
+  ul {
+    gap: 30px;
+  }
+
+  .content {
+    flex-direction: column;
+    text-align: center;
+    padding: 50px 30px;
+  }
+
+  .left {
+    align-items: center;
+    padding-left: 0;
+  }
+
+  p {
+    width: 100%;
+  }
+
+  .buttons {
+    justify-content: center;
+    padding: 30px;
+  }
+
+  button {
+    width: auto;
+    min-width: 150px;
+  }
+
+  .card {
+    margin: 30px;
+    padding: 40px 30px;
+  }
+
+  .footer-container {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 40px;
+  }
+
+  .ul3 {
+    align-items: flex-start;
+    text-align: left;
+  }
+
+  .inp {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  input {
+    max-width: 100%;
+  }
+}
+
+/* Large screens (769px to 992px) */
+@media (min-width: 769px) and (max-width: 992px) {
+  .header {
+    padding: 20px 40px;
+  }
+
+  ul {
+    gap: 35px;
+  }
+
+  .content {
+    padding: 60px 40px;
+  }
+
+  .left {
+    padding-left: 40px;
+  }
+
+  p {
+    width: 70%;
+  }
+
+  .buttons {
+    padding-left: 40px;
+  }
+
+  button {
+    min-width: 160px;
+  }
+
+  .card {
+    margin: 40px;
+    padding: 50px 40px;
+  }
+
+  .footer-container {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 50px;
+  }
+}
+
+/* Extra-large screens (993px and above) */
+@media (min-width: 993px) {
+  .header {
+    padding: 20px 60px;
+  }
+
+  ul {
+    gap: 40px;
+  }
+
+  .content {
+    padding: 80px 60px;
+  }
+
+  .left {
+    padding-left: 60px;
+  }
+
+  p {
+    width: 60%;
+  }
+
+  .buttons {
+    padding-left: 60px;
+  }
+
+  button {
+    min-width: 180px;
+  }
+
+  .card {
+    margin: 50px 60px;
+    padding: 60px;
+  }
+
+  .footer-container {
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 60px;
+  }
+}
